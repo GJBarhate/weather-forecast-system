@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #d1841f;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.container {
+    /* max-width: 60%; */
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.searchcontainer {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar {
+    width: 30%;
+    display: flex;
+    justify-self: flex-start;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #d1841f;
+    border-radius: 5px;
+}
+
+.btns {
+    text-align: center;
+}
+
+.currentweather, .forecast, .citynews {
+    background-color: #d1841f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.currentweather:hover, .forecast:hover, .citynews:hover {
+    background-color: #b76e15;
+}
+
+.weather-table {
+    width: 40%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.weather-table th, .weather-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.weather-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.weather-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-info {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .search-bar {
+        width: 90%;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+}
+.cur{
+    font-size: x-large;
+}

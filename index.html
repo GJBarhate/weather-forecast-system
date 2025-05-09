@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecasting System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecasting System</h1>
+        <div class="btns">
+            <button class="currentweather" onclick="currentweather(input.value)">Current Weather</button>
+            <button class="forecast">Forecast</button>
+            <button class="citynews">City News</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="searchcontainer">
+            <input type="text" id="city" class="searchbar" placeholder="Enter city name">
+            <button class="currentweather" onclick="currentweather(input.value)">Current Weather</button>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="cur">Current Weather :</div>
+                <table class="weather-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City</td>
+                            <td class="names"></td>
+                        </tr>
+                        <tr>
+                            <td>Temperature</td>
+                            <td class="temp"></td>
+                        </tr>
+                        <tr>
+                            <td>Feels Like</td>
+                            <td class="tempfeel"></td>
+                        </tr>
+                        <tr>
+                            <td>Weather Condition</td>
+                            <td class="weathercondition"></td>
+                        </tr>
+                        <tr>
+                            <td>Humidity</td>
+                            <td class="humidity"></td>
+                        </tr>
+                        <tr>
+                            <td>Pressure</td>
+                            <td class="pressure"></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Speed</td>
+                            <td class="wind"></td>
+                        </tr>
+                        <tr>
+                            <td>Wind Direction</td>
+                            <td class="winddirection"></td>
+                        </tr>
+                        <tr>
+                            <td>Visibility</td>
+                            <td class="visibility"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="forecast-section" class="weather-section" style="display:none;">
+            <h3>Weather Forecast</h3>
+            <div id="forecast-info" class="weather-info"></div>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
