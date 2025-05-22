@@ -61,7 +61,4 @@ For production use, you should obtain your own API keys and implement proper sec
 - Chrome, Firefox, Safari, Edge (latest versions)
 - Responsive design works on mobile, tablet and desktop
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
 
