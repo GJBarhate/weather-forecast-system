@@ -44,7 +44,7 @@ No installation required! This is a client-side application that runs directly i
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/GJBarhate/weather-forecast-system.git
    ```
 2. Open `index.html` in any modern browser
 
