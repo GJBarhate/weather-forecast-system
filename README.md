@@ -1,64 +1,67 @@
-# 🌤️ Weather Forecasting System
+# Weather App
 
-A **Weather Forecasting System** built using the **OpenWeather API** that provides **current weather details** and a **5-day weather forecast** for a given city. Stay tuned for **city-specific news** coming soon! 🌎🌧️☀️
+A modern, responsive weather application that provides current weather conditions, forecasts, and city-specific news.
 
----
+## Screenshots
 
-## 🚀 Features:
-- 🌡️ **Current weather data** (temperature, humidity, wind speed, and more!)
-- 🌤️ **5-day weather forecast** to help you plan ahead
-- 📰 **City-specific news** (coming soon!)
+### Current Weather View
+![Current Weather View](WeatherForecastingSystem1.png)
 
----
+### Forecast & Charts View
+![Forecast and Charts](WeatherForecastingSystem2.png)
 
-## 📷 Screenshots
+## Features
 
-Here’s what the Weather Forecasting System looks like:
+- **Current Weather Data**: Temperature, feels-like, humidity, wind, pressure, and visibility
+- **Dynamic Backgrounds**: Weather-responsive background themes  
+- **5-Day Forecast**: Simple, visual forecast cards
+- **Interactive Charts**: Temperature and humidity trend visualization
+- **Weather Alerts**: Critical weather warnings and advisories when available
+- **City News**: Local news for any searched location
+- **Geolocation**: "Use My Location" feature for instant local weather
+- **City Autocomplete**: Smart search suggestions as you type
+- **Dark/Light Mode**: Toggleable theme to suit your preference
 
-![Weather Screenshot](WeatherForecasting.png)
+## Technologies Used
 
----
+- HTML5, CSS3, JavaScript
+- [OpenWeatherMap API](https://openweathermap.org/api) - Weather data
+- [NewsAPI](https://newsapi.org/) - City news information
+- [Chart.js](https://www.chartjs.org/) - Data visualization
+- [Teleport API](https://developers.teleport.org/api/) - City search autocomplete
 
-## 💻 Technologies:
-- **Frontend**: HTML, CSS, JavaScript
-- **API Used**: OpenWeather API (provides weather data)
-- **Other**: Real-time weather updates based on city name
+## How to Use
 
----
+1. Enter a city name in the search box or click "Location" to use your current position
+2. View current conditions, forecast, and weather alerts (if any)
+3. Click "News" to see local news for that location
+4. Toggle between light and dark mode using the theme button
+5. Click "Show Chart" to view temperature and humidity trends
 
-## 🚀 Usage:
+## Installation
 
-To use this Weather Forecasting System:
-
-1. **Enter a city name** in the search bar at the top of the page.
-2. **Click on "Current Weather"** to view the current weather details for your city (temperature, humidity, wind speed, and more).
-3. **Click on "Forecast"** to see a **5-day weather forecast** for the city.
-
----
-
-## 🛠️ Installation:
-
-To run this project locally, follow these steps:
+No installation required! This is a client-side application that runs directly in your browser.
 
 1. Clone the repository:
-   
+   ```
+   git clone https://github.com/yourusername/weather-app.git
+   ```
+2. Open `index.html` in any modern browser
 
-   git clone https://github.com/GJBarhate/weather-forecast-system.git
+## API Keys
 
+The application uses the following API keys:
+- OpenWeatherMap API: Included in the code
+- NewsAPI: Included in the code
 
-2. Navigate to the project directory:
-   
+For production use, you should obtain your own API keys and implement proper security measures.
 
-   cd weather-forecasting-system
+## Browser Compatibility
 
+- Chrome, Firefox, Safari, Edge (latest versions)
+- Responsive design works on mobile, tablet and desktop
 
-3. Open index.html in your browser or use a local server.
+## License
 
----
+This project is open source and available under the [MIT License](LICENSE).
 
-## 🙏 Acknowledgments:
-- 💡 **OpenWeather API** for providing real-time weather data and forecasts.
-https://openweathermap.org
-- 🎨 **Flaticon** for the icons used in this project.
-https://www.flaticon.com
----

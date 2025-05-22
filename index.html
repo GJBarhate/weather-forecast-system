@@ -3,85 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecasting System</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Weather Forecasting System</h1>
+        <h1>Weather App</h1>
         <div class="btns">
-            <button class="currentweather" onclick="currentweather(input.value)">Current Weather</button>
-            <button class="forecast">Forecast</button>
-            <button class="citynews">City News</button>
+            <button class="currentweather" onclick="currentweather(elements.input.value)">Weather</button>
+            <button class="citynews">News</button>
+            <button id="theme-toggle">🌙</button>
         </div>
     </header>
 
     <div class="container">
         <div class="searchcontainer">
             <input type="text" id="city" class="searchbar" placeholder="Enter city name">
-            <button class="currentweather" onclick="currentweather(input.value)">Current Weather</button>
+            <button class="currentweather" onclick="currentweather(elements.input.value)">Search</button>
+            <button id="location-btn" class="location-btn">📍 Location</button>
         </div>
+        
+        <div id="loader">Loading...</div>
+        <div id="error"></div>
+        
         <div class="main">
             <div class="container">
-                <div class="cur">Current Weather :</div>
-                <table class="weather-table">
-                    <thead>
-                        <tr>
-                            <th>Parameter</th>
-                            <th>Value</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>City</td>
-                            <td class="names"></td>
-                        </tr>
-                        <tr>
-                            <td>Temperature</td>
-                            <td class="temp"></td>
-                        </tr>
-                        <tr>
-                            <td>Feels Like</td>
-                            <td class="tempfeel"></td>
-                        </tr>
-                        <tr>
-                            <td>Weather Condition</td>
-                            <td class="weathercondition"></td>
-                        </tr>
-                        <tr>
-                            <td>Humidity</td>
-                            <td class="humidity"></td>
-                        </tr>
-                        <tr>
-                            <td>Pressure</td>
-                            <td class="pressure"></td>
-                        </tr>
-                        <tr>
-                            <td>Wind Speed</td>
-                            <td class="wind"></td>
-                        </tr>
-                        <tr>
-                            <td>Wind Direction</td>
-                            <td class="winddirection"></td>
-                        </tr>
-                        <tr>
-                            <td>Visibility</td>
-                            <td class="visibility"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="cur">Current Weather</div>
+                
+                <div class="main-temp"><span class="temp"></span></div>
+                <div class="main-condition">
+                    <span class="weathercondition"></span> in <span class="names"></span>
+                </div>
+                
+                <div class="weather-info-grid">
+                    <div class="weather-info-item">
+                        <div class="label">Feels Like</div>
+                        <div class="value tempfeel"></div>
+                    </div>
+                    
+                    <div class="weather-info-item">
+                        <div class="label">Humidity</div>
+                        <div class="value humidity"></div>
+                    </div>
+                    
+                    <div class="weather-info-item">
+                        <div class="label">Wind</div>
+                        <div class="value wind"></div>
+                    </div>
+                    
+                    <div class="weather-info-item">
+                        <div class="label">Direction</div>
+                        <div class="value winddirection"></div>
+                    </div>
+                    
+                    <div class="weather-info-item">
+                        <div class="label">Pressure</div>
+                        <div class="value pressure"></div>
+                    </div>
+                    
+                    <div class="weather-info-item">
+                        <div class="label">Visibility</div>
+                        <div class="value visibility"></div>
+                    </div>
+                </div>
+                
+                <div id="alerts"></div>
+                
+                <div class="action-buttons">
+                    <button id="showChartBtn">📊 Show Chart</button>
+                </div>
+                
+                <canvas id="weatherChart" width="400" height="200" style="display:none"></canvas>
+                
+                <div id="forecast-section">
+                  <h3>5-Day Forecast</h3>
+                  <div id="forecast-cards" class="forecast-cards"></div>
+                </div>
             </div>
         </div>
 
-        <div id="forecast-section" class="weather-section" style="display:none;">
-            <h3>Weather Forecast</h3>
-            <div id="forecast-info" class="weather-info"></div>
+        <div id="news-section" class="weather-section" style="display:none;">
+            <div class="news-header">
+                <h3 id="news-title">Latest News</h3>
+                <button class="back-btn" onclick="showWeatherView()">Back</button>
+            </div>
+            <div id="news-content" class="news-content"></div>
         </div>
     </div>
 
-    <footer>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
